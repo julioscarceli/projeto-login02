@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de login efeito vidro desfocado</title>
+    <style>
+        html, body {
+            width: 100%; height: 100%; /*Ocupa todo navegador */
+            padding: 0px;
+            margin: 0px;
+            border: 0px;
+        }
+        .container {
+            width: 100%;
+            height: 100%;
+
+            background-image: url(../projeto-login02/imagens/balao.jpg);
+            background-size: cover;   
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .login {
+            width: 100%;
+            max-width: 400px;
+            height: 250px;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            background-color: #ffffff10;
+            border: 2px solid #ffffff30;
+
+            backdrop-filter: blur(15px);
+        
+        }
+
+        input {
+            width: 90%;
+            height: 40px;
+            border-radius: 5px;
+            margin: 10px 0;
+            border: 2px solid  #ffffff30;
+
+        }
+
+        input[type="submit"]{
+            background-image: linear-gradient(45deg ,#f37335,#fdc830);
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="login">
+            <input type="email" placeholder="Digite seu email"/>
+            <input type="password" placeholder="Digite sua senha"/>
+            <input type="submit"/>
+        </div>
+    </div>
+
+    
+</body>
+</html>
